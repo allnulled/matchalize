@@ -1,0 +1,46 @@
+#! /usr/bin/env node
+
+const opts = require("yargs")
+	.usage("Usage: $0 [options]")
+	.option("texts", {
+		type: "array",
+		describe: "Strings to match",
+		demand: false,
+		default: []
+	})
+	.option("regex", {
+		type: "array",
+		describe: "Regular Expressions to match",
+		demand: false,
+		default: []
+	})
+	.option("files", {
+		type: "array",
+		describe: "JSON or JS files to extract matchers",
+		demand: false,
+		default: []
+	})
+	.option("sources", {
+		type: "array",
+		describe: "Files to search for matches",
+		demand: true
+	})
+	.option("results", {
+		type: "string",
+		describe: "File to dump results",
+		demand: false,
+		default: "results.{DATE}.json"
+	})
+	.option("analysis", {
+		type: "string",
+		describe: "File to dump analysis",
+		demand: false,
+		default: "analysis.{DATE}.json"
+	})
+	.version((function() { return require(__dirname + "/../package").version; })())
+	.help("help")
+	.showHelpOnFail(true)
+	.wrap(78)
+	.argv;
+
+require(__dirname + "/../src/matchalize.js").run(opts);

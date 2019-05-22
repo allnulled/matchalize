@@ -4,6 +4,8 @@ Find strings and regular expressions on files and get matches per file and files
 
 It works from CLI or API.
 
+![](https://img.shields.io/badge/matchalize-v1.0.0-green.svg) ![](https://img.shields.io/badge/tests-passing-green.svg) ![](https://img.shields.io/badge/coverage-80%25--100%25-green.svg)
+
 ## Installation
 
 `$ npm i matchalize -g`
@@ -218,7 +220,12 @@ This file has this shape:
   },
   ...
 ]
-```# Read this file
-# Read this file
-# Read this file
-# Read this file
+```
+
+## Issues
+
+Issues [here](https://github.com/allnulled/matchalize/issues/new).
+
+## License
+
+This project is under [WTFL](https://es.wikipedia.org/wiki/WTFPL). Feel free to do whatever you want.

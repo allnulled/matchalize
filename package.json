@@ -1,0 +1,30 @@
+{
+  "name": "matchalize",
+  "version": "1.0.0",
+  "description": "Find strings and regular expressions on files and get matches per file and files per match.",
+  "bin": {
+    "matchalize": "./bin/matchalize"
+  },
+  "main": "src/matchalize.js",
+  "scripts": {
+    "clean": "rimraf .nyc_output coverage node_modules test/files/*.json test/somepath/*.json test/somepath/*.js",
+    "coverage": "nyc --reporter=html mocha test/*.test.js",
+    "test": "mocha test/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^8.0.1",
+    "globby": "^9.2.0",
+    "yargs": "^13.2.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "execute-command-sync": "^1.0.2",
+    "javadoc": "^1.0.6",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "rimraf": "^2.6.3"
+  }
+}
