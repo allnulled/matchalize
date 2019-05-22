@@ -6,6 +6,8 @@ It works from CLI or API.
 
 ![](https://img.shields.io/badge/matchalize-v1.0.0-green.svg) ![](https://img.shields.io/badge/tests-passing-green.svg) ![](https://img.shields.io/badge/coverage-80%25--100%25-green.svg)
 
+[![NPM](https://nodei.co/npm/matchalize.png?stars&downloads)](https://www.npmjs.com/package/matchalize)
+
 ## Installation
 
 `$ npm i matchalize -g`
