@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "WTFL",
   "dependencies": {
     "fs-extra": "^8.0.1",
     "globby": "^9.2.0",
@@ -26,5 +26,16 @@
     "mocha": "^6.1.4",
     "nyc": "^14.1.1",
     "rimraf": "^2.6.3"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allnulled/matchalize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/allnulled/matchalize/issues"
+  },
+  "homepage": "https://github.com/allnulled/matchalize#readme"
 }

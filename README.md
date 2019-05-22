@@ -226,6 +226,14 @@ This file has this shape:
 
 Issues [here](https://github.com/allnulled/matchalize/issues/new).
 
+## Tests and coverage
+
+To run tests and coverage, please, type:
+
+`$ npm run test`
+
+`$ npm run coverage`
+
 ## License
 
 This project is under [WTFL](https://es.wikipedia.org/wiki/WTFPL). Feel free to do whatever you want.
